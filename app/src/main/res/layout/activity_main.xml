@@ -1,23 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/black">
+    android:layout_height="match_parent">
 
-    <com.buffup.sdk.ui.BuffView
-        android:id="@+id/buffView"
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:buffsVisibility="left">
+        android:layout_height="wrap_content">
 
-        <com.google.android.exoplayer2.ui.PlayerView
-            android:id="@+id/playerView"
+        <Button
+            android:id="@+id/streamButton"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:resize_mode="zoom"
-            app:use_controller="true" />
+            android:text="Stream"
+            android:layout_height="wrap_content"/>
 
-    </com.buffup.sdk.ui.BuffView>
+        <Button
+            android:id="@+id/secondScreenButton"
+            android:layout_width="match_parent"
+            android:text="2nd Screen"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
 
 </FrameLayout>
