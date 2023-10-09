@@ -11,13 +11,19 @@
         android:layout_height="match_parent"
         app:buffsVisibility="left">
 
-        <com.google.android.exoplayer2.ui.PlayerView
+        <com.jwplayer.pub.view.JWPlayerView
             android:id="@+id/playerView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:resize_mode="zoom"
-            app:use_controller="true" />
+            android:layout_height="match_parent" />
 
     </com.buffup.sdk.ui.BuffView>
+
+    <Button
+            android:id="@+id/fullScreenButton"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:text="Full screen"/>
 
 </FrameLayout>
