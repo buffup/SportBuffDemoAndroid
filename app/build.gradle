@@ -42,5 +42,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation "com.google.android.exoplayer:exoplayer-core:2.14.2"
     implementation "com.google.android.exoplayer:exoplayer:2.14.2"
-    implementation 'com.github.buffup:Android:v4.0.1'
+    implementation 'com.github.buffup:Android:v5.0.0'
 }
